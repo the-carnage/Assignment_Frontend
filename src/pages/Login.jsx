@@ -93,8 +93,8 @@ const Login = () => {
           </div>
         </form>
         <div className="mt-4 text-xs text-gray-500 text-center">
-          <p>Teacher DB: teacher@upaay.com / teacher123</p>
-          <p>Student DB: student@upaay.com / student123</p>
+          <p>Teacher DB: teacher@mail.com / teacher123</p>
+          <p>Student DB: student@mail.com / student123</p>
         </div>
       </div>
     </div>
