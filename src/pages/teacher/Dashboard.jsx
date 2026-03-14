@@ -8,7 +8,7 @@ import { format } from 'date-fns';
 
 const TeacherDashboard = () => {
   const dispatch = useDispatch();
-  const [assignments, setAssignments] = parseInt([]);
+  const [assignments, setAssignments] = useState([]);
   const [filter, setFilter] = useState('All');
   const [loading, setLoading] = useState(true);
 
@@ -104,8 +104,8 @@ const TeacherDashboard = () => {
                 <li className="px-6 py-10 text-center text-gray-500">No assignments found.</li>
               ) : (
                 currentItems.map((assignment) => (
-                  <li key={assignment.id}>
-                    <div className="px-4 py-4 sm:px-6 hover:bg-gray-50 flex items-center justify-between">
+                  <li key={assignment.id} className="transition duration-150 ease-in-out hover:shadow-md hover:bg-blue-50">
+                    <div className="px-4 py-4 sm:px-6 flex items-center justify-between">
                       <div className="flex-1 min-w-0">
                         <p className="text-lg font-medium text-blue-600 truncate">{assignment.title}</p>
                         <p className="mt-1 text-sm text-gray-500 truncate">{assignment.description}</p>
